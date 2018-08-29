@@ -7,7 +7,7 @@ NodeJS instalado
 Banco de Dados MySQL instalado.
 
 ## Backend
-* [Restify](http://expressjs.com/) - Framework de REST API para NodeJS
+* [Restify](http://restify.com/) - Framework de REST API para NodeJS
 * [MySQL](https://www.npmjs.com/package/mysql) - Plugin de conexão com o BD
 
 ## Deployment
@@ -26,7 +26,7 @@ node index-async.js
 http://localhost:5000/listar
 ```
 
-* Execute o comando abaixo para subir o servidor (com sincronia):
+* Pare (CTRL+C) e execute o comando abaixo para subir o servidor (com sincronia):
 ```
 node index-sync.js
 ```
@@ -36,5 +36,7 @@ http://localhost:5000/listar
 ```
 
 ## Funcionamento
-index-async.js => como a chamada ao banco de dados não está sincronizada com a API, a resposta à request ficará vazia.
-index-sync.js => com o uso de Promise o sistema garante que a API irá aguardar o retorno do BD antes de retornar a response, fazendo com que o funcionamento seja o esperado.
+*index-async.js
+**Como a chamada ao banco de dados não está sincronizada com a API, a resposta à request ficará vazia.
+*index-sync.js
+**Com o uso de Promise o sistema garante que a API irá aguardar o retorno do BD antes de retornar a response, fazendo com que o funcionamento seja o esperado.
