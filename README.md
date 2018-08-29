@@ -36,7 +36,7 @@ http://localhost:5000/listar
 ```
 
 ## Funcionamento
-*index-async.js
-**Como a chamada ao banco de dados não está sincronizada com a API, a resposta à request ficará vazia.
-*index-sync.js
-**Com o uso de Promise o sistema garante que a API irá aguardar o retorno do BD antes de retornar a response, fazendo com que o funcionamento seja o esperado.
+* index-async.js
+** Como a chamada ao banco de dados não está sincronizada com a API, a resposta à request ficará vazia.
+* index-sync.js
+** Com o uso de Promise o sistema garante que a API irá aguardar o retorno do BD antes de retornar a response, fazendo com que o funcionamento seja o esperado.
